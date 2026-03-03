@@ -4,7 +4,7 @@ class Palindrome {
         int[] array = ArrayUtility.inputArray();
 
         System.out.println("The Array:");
-        displayArray(array);
+        ArrayUtility.displayArray(array);
 
         boolean isPalindrome = isPalindrome(array);
 
@@ -13,15 +13,6 @@ class Palindrome {
        }else{
            System.out.println("The given array is not a palindrome");
        }
-    }
-
-    public static void displayArray(int[] array){
-        int i = 0;
-        while(i < array.length){
-            System.out.print(array[i] + " ");
-            i++;
-        }
-        System.out.println();
     }
 
     public static boolean isPalindrome(int[] array){
